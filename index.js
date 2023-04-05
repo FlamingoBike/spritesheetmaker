@@ -2,9 +2,9 @@ const sharp = require('sharp');
 const fs = require('fs/promises');
 
 const SPRITE_SIZE = 64;
-const INPUT_PATH = "minecraftimages";
-const OUTPUT_NAME = "minecraft";
-const CLASS_PREFIX = "minecraft";
+const INPUT_PATH = "images";
+const OUTPUT_NAME = "itemsheet";
+const CLASS_PREFIX = "monumenta";
 const INCLUDE_MINECRAFT_COLORS = false;
 const RESIZE_IMAGES_TO_SPRITE_SIZE = false;
 
