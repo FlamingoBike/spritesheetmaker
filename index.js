@@ -151,7 +151,7 @@ async function main() {
         "}\n\n";
     // Now add all the block classes
     for (let comp of composite) {
-        stylesFile += `.${CLASS_PREFIX}-${comp.input.replace(`${INPUT_PATH}/`, "").replace(".png", "").replaceAll("_", "-")} {\n`;
+        stylesFile += `.${CLASS_PREFIX}-${comp.input.replace(`${INPUT_PATH}/`, "").replace(".png", "").replaceAll("_", "-").replaceAll("'", "")} {\n`;
         stylesFile  += `\tbackground-position: ${(comp.left != 0) ? `-${comp.left}px` : "0"} ${(comp.top != 0) ? `-${comp.top}px` : "0"};\n`;
         stylesFile += "}\n\n";
     }
